@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  ros2:
+    image: osrf/ros:humble-desktop
+    container_name: ros2_ws
+    restart: unless-stopped
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    
+    # Critical for ROS2 DDS communication and GUI
+    network_mode: host
+    ipc: host
+
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - LIBGL_ALWAYS_SOFTWARE=0
+      - RADEON_DEBUG=no_aa
+
+    volumes:
+      # GUI forwarding sockets
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ~/.Xauthority:/root/.Xauthority:ro
+      # Persistent workspace (Maps your local directory to the container)
+      - ./workspace:/root/ros2_ws
+
+    devices:
+      # GPU Hardware acceleration for RViz / Gazebo
+      - /dev/dri:/dev/dri
+
+    # Automatically source ROS2 when entering the container
+    command: bash -c "source /opt/ros/humble/setup.bash && bash"
+

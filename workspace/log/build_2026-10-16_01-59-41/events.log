@@ -1,0 +1,83 @@
+[0.000000] (-) TimerEvent: {}
+[0.000949] (my_cpp_package) JobQueued: {'identifier': 'my_cpp_package', 'dependencies': OrderedDict()}
+[0.001002] (my_py_package) JobQueued: {'identifier': 'my_py_package', 'dependencies': OrderedDict()}
+[0.001091] (my_cpp_package) JobStarted: {'identifier': 'my_cpp_package'}
+[0.012229] (my_py_package) JobStarted: {'identifier': 'my_py_package'}
+[0.018788] (my_cpp_package) JobProgress: {'identifier': 'my_cpp_package', 'progress': 'cmake'}
+[0.020378] (my_cpp_package) Command: {'cmd': ['/usr/bin/cmake', '/root/ros2_ws/my_cpp_package', '-DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/my_cpp_package'], 'cwd': '/root/ros2_ws/build/my_cpp_package', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '0'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('RADEON_DEBUG', 'no_aa'), ('DISPLAY', '10.255.255.254:0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('PWD', '/root/ros2_ws/build/my_cpp_package'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.099656] (-) TimerEvent: {}
+[0.192063] (my_cpp_package) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199780] (-) TimerEvent: {}
+[0.276786] (my_cpp_package) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.287035] (my_cpp_package) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299904] (-) TimerEvent: {}
+[0.350253] (my_cpp_package) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.356626] (my_cpp_package) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.357197] (my_cpp_package) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.357964] (my_cpp_package) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.361913] (my_cpp_package) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400021] (-) TimerEvent: {}
+[0.424922] (my_py_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/my_py_package', 'build', '--build-base', '/root/ros2_ws/build/my_py_package/build', 'install', '--record', '/root/ros2_ws/build/my_py_package/install.log', '--install-scripts', '$base/lib/my_py_package', '--single-version-externally-managed', 'install_data'], 'cwd': '/root/ros2_ws/my_py_package', 'env': {'HOSTNAME': 'docker-desktop', 'SHLVL': '1', 'LIBGL_ALWAYS_SOFTWARE': '0', 'HOME': '/root', 'OLDPWD': '/root', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'TERM': 'xterm', 'QT_X11_NO_MITSHM': '1', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'RADEON_DEBUG': 'no_aa', 'DISPLAY': '10.255.255.254:0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'PWD': '/root/ros2_ws/build/my_py_package', 'LC_ALL': 'C.UTF-8', 'COLCON': '1', 'PYTHONPATH': '/root/ros2_ws/build/my_py_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/my_py_package/lib/python3.10/site-packages:'}, 'shell': False}
+[0.434126] (my_cpp_package) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.440529] (my_cpp_package) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.440774] (my_cpp_package) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.441183] (my_cpp_package) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.454776] (my_cpp_package) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[0.455108] (my_cpp_package) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.455280] (my_cpp_package) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.455417] (my_cpp_package) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.455552] (my_cpp_package) StderrLine: {'line': b'\n'}
+[0.455706] (my_cpp_package) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.455858] (my_cpp_package) StderrLine: {'line': b'  any of the following names:\n'}
+[0.456010] (my_cpp_package) StderrLine: {'line': b'\n'}
+[0.456161] (my_cpp_package) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.456313] (my_cpp_package) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.456466] (my_cpp_package) StderrLine: {'line': b'\n'}
+[0.456637] (my_cpp_package) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.456687] (my_cpp_package) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.456728] (my_cpp_package) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.456768] (my_cpp_package) StderrLine: {'line': b'  has been installed.\n'}
+[0.456808] (my_cpp_package) StderrLine: {'line': b'\n'}
+[0.456854] (my_cpp_package) StderrLine: {'line': b'\x1b[0m\n'}
+[0.456893] (my_cpp_package) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.456941] (my_cpp_package) StdoutLine: {'line': b'See also "/root/ros2_ws/build/my_cpp_package/CMakeFiles/CMakeOutput.log".\n'}
+[0.459404] (my_cpp_package) CommandEnded: {'returncode': 1}
+[0.483471] (my_cpp_package) JobEnded: {'identifier': 'my_cpp_package', 'rc': 1}
+[0.500136] (-) TimerEvent: {}
+[0.549734] (my_py_package) StdoutLine: {'line': b'running egg_info\n'}
+[0.550115] (my_py_package) StdoutLine: {'line': b'creating ../build/my_py_package/my_py_package.egg-info\n'}
+[0.550592] (my_py_package) StdoutLine: {'line': b'writing ../build/my_py_package/my_py_package.egg-info/PKG-INFO\n'}
+[0.550734] (my_py_package) StdoutLine: {'line': b'writing dependency_links to ../build/my_py_package/my_py_package.egg-info/dependency_links.txt\n'}
+[0.550984] (my_py_package) StdoutLine: {'line': b'writing entry points to ../build/my_py_package/my_py_package.egg-info/entry_points.txt\n'}
+[0.551060] (my_py_package) StdoutLine: {'line': b'writing requirements to ../build/my_py_package/my_py_package.egg-info/requires.txt\n'}
+[0.551107] (my_py_package) StdoutLine: {'line': b'writing top-level names to ../build/my_py_package/my_py_package.egg-info/top_level.txt\n'}
+[0.551341] (my_py_package) StdoutLine: {'line': b"writing manifest file '../build/my_py_package/my_py_package.egg-info/SOURCES.txt'\n"}
+[0.552160] (my_py_package) StdoutLine: {'line': b"reading manifest file '../build/my_py_package/my_py_package.egg-info/SOURCES.txt'\n"}
+[0.552737] (my_py_package) StdoutLine: {'line': b"writing manifest file '../build/my_py_package/my_py_package.egg-info/SOURCES.txt'\n"}
+[0.552872] (my_py_package) StdoutLine: {'line': b'running build\n'}
+[0.552930] (my_py_package) StdoutLine: {'line': b'running build_py\n'}
+[0.553047] (my_py_package) StdoutLine: {'line': b'creating /root/ros2_ws/build/my_py_package/build\n'}
+[0.553297] (my_py_package) StdoutLine: {'line': b'creating /root/ros2_ws/build/my_py_package/build/lib\n'}
+[0.553550] (my_py_package) StdoutLine: {'line': b'creating /root/ros2_ws/build/my_py_package/build/lib/my_py_package\n'}
+[0.553840] (my_py_package) StdoutLine: {'line': b'copying my_py_package/simple_node.py -> /root/ros2_ws/build/my_py_package/build/lib/my_py_package\n'}
+[0.554317] (my_py_package) StdoutLine: {'line': b'copying my_py_package/__init__.py -> /root/ros2_ws/build/my_py_package/build/lib/my_py_package\n'}
+[0.554688] (my_py_package) StdoutLine: {'line': b'running install\n'}
+[0.554757] (my_py_package) StdoutLine: {'line': b'running install_lib\n'}
+[0.555124] (my_py_package) StdoutLine: {'line': b'creating /root/ros2_ws/install/my_py_package/lib/python3.10/site-packages/my_py_package\n'}
+[0.555426] (my_py_package) StdoutLine: {'line': b'copying /root/ros2_ws/build/my_py_package/build/lib/my_py_package/simple_node.py -> /root/ros2_ws/install/my_py_package/lib/python3.10/site-packages/my_py_package\n'}
+[0.555568] (my_py_package) StdoutLine: {'line': b'copying /root/ros2_ws/build/my_py_package/build/lib/my_py_package/__init__.py -> /root/ros2_ws/install/my_py_package/lib/python3.10/site-packages/my_py_package\n'}
+[0.555996] (my_py_package) StdoutLine: {'line': b'byte-compiling /root/ros2_ws/install/my_py_package/lib/python3.10/site-packages/my_py_package/simple_node.py to simple_node.cpython-310.pyc\n'}
+[0.556588] (my_py_package) StdoutLine: {'line': b'byte-compiling /root/ros2_ws/install/my_py_package/lib/python3.10/site-packages/my_py_package/__init__.py to __init__.cpython-310.pyc\n'}
+[0.556753] (my_py_package) StdoutLine: {'line': b'running install_data\n'}
+[0.556946] (my_py_package) StdoutLine: {'line': b'creating /root/ros2_ws/install/my_py_package/share/ament_index\n'}
+[0.557112] (my_py_package) StdoutLine: {'line': b'creating /root/ros2_ws/install/my_py_package/share/ament_index/resource_index\n'}
+[0.557365] (my_py_package) StdoutLine: {'line': b'creating /root/ros2_ws/install/my_py_package/share/ament_index/resource_index/packages\n'}
+[0.557674] (my_py_package) StdoutLine: {'line': b'copying resource/my_py_package -> /root/ros2_ws/install/my_py_package/share/ament_index/resource_index/packages\n'}
+[0.557822] (my_py_package) StdoutLine: {'line': b'copying package.xml -> /root/ros2_ws/install/my_py_package/share/my_py_package\n'}
+[0.558026] (my_py_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.559197] (my_py_package) StdoutLine: {'line': b'Copying ../build/my_py_package/my_py_package.egg-info to /root/ros2_ws/install/my_py_package/lib/python3.10/site-packages/my_py_package-0.0.0-py3.10.egg-info\n'}
+[0.560162] (my_py_package) StdoutLine: {'line': b'running install_scripts\n'}
+[0.576122] (my_py_package) StdoutLine: {'line': b"writing list of installed files to '/root/ros2_ws/build/my_py_package/install.log'\n"}
+[0.593370] (my_py_package) JobEnded: {'identifier': 'my_py_package', 'rc': 'SIGINT'}
+[0.600258] (-) TimerEvent: {}
+[0.603883] (-) EventReactorShutdown: {}
