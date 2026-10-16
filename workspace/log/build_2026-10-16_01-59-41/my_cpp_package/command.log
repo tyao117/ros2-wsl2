@@ -1,2 +1,0 @@
-Invoking command in '/root/ros2_ws/build/my_cpp_package': /usr/bin/cmake /root/ros2_ws/my_cpp_package -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/my_cpp_package
-Invoked command in '/root/ros2_ws/build/my_cpp_package' returned '1': /usr/bin/cmake /root/ros2_ws/my_cpp_package -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/my_cpp_package
